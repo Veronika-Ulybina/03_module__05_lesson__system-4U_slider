@@ -1,0 +1,266 @@
+.benefits {
+	text-align: center;
+	color: #383a4c;
+	padding: 70px 0;
+}
+
+.benefits__title {
+	font-weight: 700;
+	font-size: 35px;
+	margin-bottom: 25px;
+}
+
+.benefits__about-block {
+	margin-bottom: 50px;
+}
+
+.about-block__title {
+	position: relative;
+	display: inline-block;
+	font-weight: 500;
+	margin-bottom: 35px;
+}
+
+.about-block__title:before, 
+.about-block__title:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	width: 43px;
+	height: 2px;
+	background-color: #383a4c;
+}
+
+.about-block__title:before {
+	left: 0;
+	transform: translate(-66px, -50%);
+}
+
+.about-block__title:after {
+	right: 0;
+	transform: translate(66px, -50%);
+}
+
+.about-block__text {
+	max-width: 724px;
+	font-size: 18px;
+	line-height: 140%;
+	margin: 0 auto;
+}
+
+.benefits-list {
+	max-width: 934px;
+	display: flex;
+	justify-content: space-between;
+	column-gap: var(--column-gap);
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+.benefits-list__item {
+	flex-basis: calc(100% / var(--card-count) - (var(--card-count) - 1) * var(--column-gap) / var(--card-count));
+}
+
+.benefits-list__number {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 122px;
+	height: 122px;
+	font-weight: 500;
+	font-size: 57px;
+	line-height: 100%;
+	background-color: #23c7ec;
+	color: var(--main-color, #fff);
+	border-radius: 50%;
+	margin: 0 auto 16px;
+}
+
+.benefits-list__text {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 140%;
+}
+
+@media (max-width: 1024px) {
+
+	.benefits__title {
+		font-size: 32px;
+		margin-bottom: 23px;
+	}
+
+	.about-block__title {
+		font-size: 20px;
+		margin-bottom: 33px;
+	}
+	
+	.about-block__title:before, 
+	.about-block__title:after {
+		width: 40px;
+	}
+	
+	.about-block__title:before {
+		transform: translate(-60px, -50%);
+	}
+	
+	.about-block__title:after {
+		transform: translate(62px, -50%);
+	}
+
+	.about-block__text {
+		max-width: 666px;
+		font-size: 16px;
+	}
+
+	.benefits-list {
+		max-width: 870px;
+	}
+
+	.benefits-list__number {
+		width: 104px;
+		height: 104px;
+		font-size: 52px;
+		line-height: 140%;
+		margin: 0 auto 26px;
+	}
+	
+	.benefits-list__text {
+		max-width: 180px;
+		font-size: 18px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 920px) {
+
+	.benefits-list {
+		max-width: 600px;
+		row-gap: 40px;
+		--card-count: 2;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.benefits__title {
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 480px) {
+
+	.benefits {
+		padding: 30px 0 60px;
+	}
+
+	.benefits__title {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+
+	.benefits__about-block {
+		margin-bottom: 40px;
+	}
+
+	.about-block__title {
+		font-size: 16px;
+		margin-bottom: 26px;
+	}
+	
+	.about-block__title:before, 
+	.about-block__title:after {
+		width: 20px;
+		height: 1px;
+	}
+	
+	.about-block__title:before {
+		transform: translate(-42px, -50%);
+	}
+	
+	.about-block__title:after {
+		transform: translate(42px, -50%);
+	}
+
+	.about-block__text {
+		font-size: 12px;
+	}
+
+	/* slider Slick */
+
+	.benefits-list {
+		--card-count: 4;
+		position: relative;
+	}
+
+	.benefits-list__item {
+		margin: 0 auto;
+	}
+
+	.slick-list {
+		overflow: hidden;
+	}
+
+	.slick-track {
+		display: flex;
+	}
+
+	.benefits-list .slick-arrow {
+		position: absolute;
+		top: 50%;
+		z-index: 10;
+		width: 38px;
+		height: 38px;
+		font-size: 0;
+		background-color: rgba(75, 77, 98, 0.72);
+		border-radius: 50%;
+		transform: translateY(-50%);
+	}
+
+	.benefits-list .slick-arrow.slick-prev {
+		left: 0;
+	}
+
+	.benefits-list .slick-arrow.slick-prev:before, 
+	.benefits-list .slick-arrow.slick-prev:after, 
+	.benefits-list .slick-arrow.slick-next:before, 
+	.benefits-list .slick-arrow.slick-next:after {
+		content: "";
+		position: absolute;
+		width: 2px;
+		height: 10px;
+		background-color: #fff;
+	}
+
+	.benefits-list .slick-arrow.slick-prev:before {
+		top: 50%;
+		transform: rotate(-45deg) translateY(-29%);
+	} 
+	
+	.benefits-list .slick-arrow.slick-prev:after {
+		bottom: 50%;
+		transform: rotate(45deg) translateY(29%);
+	}
+
+	.benefits-list .slick-arrow.slick-next {
+		right: 0;
+	}
+
+	.benefits-list .slick-arrow.slick-next:before {
+		top: 50%;
+		transform: rotate(45deg) translateY(-29%);
+	} 
+	
+	.benefits-list .slick-arrow.slick-next:after {
+		bottom: 50%;
+		transform: rotate(-45deg) translateY(29%);
+	}
+
+	.benefits-list .slick-arrow.slick-disabled {
+		background-color: #fff;
+	}
+
+	.benefits-list .slick-arrow.slick-disabled:before, 
+	.benefits-list .slick-arrow.slick-disabled:after {
+		background-color: #434343;
+	}
+}

@@ -1,0 +1,113 @@
+html {
+	position: relative;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	position: relative;
+	overflow-x: hidden;
+	min-width: 320px;
+	min-height: 100vh;
+	font-family: Roboto, sans-serif;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	font-size: 22px;
+	background-color: #f9f9f9;
+	color: var(--main-color, #fff);
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	max-width: 1260px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+
+	.container {
+		padding: 0 15px;
+	}
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+img, svg {
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+}
+
+input, button {
+	font-family:inherit;
+}
+
+button {
+	font-weight: inherit;
+	padding: 0;
+	cursor: pointer;
+	border: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+h1,
+h2,
+h3,
+p,
+figure, 
+fieldset, 
+blockquote {
+	margin: 0;
+}
+
+fieldset, 
+input {
+	padding: 0;
+	border: none;
+}
+
+address, cite {
+	font-style: normal;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px 1px 1px 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 0 !important;
+	width: 0 !important;
+	overflow: hidden;
+}

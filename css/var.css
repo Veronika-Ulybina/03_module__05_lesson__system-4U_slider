@@ -1,0 +1,10 @@
+:root {
+	--main-color: #fff;
+	--color-blue: #15a9cb;
+	--bg-color-purple: rgba(47, 50, 75, 0.85);
+}
+
+.benefits {
+	--column-gap: 50px;
+	--card-count: 4;
+}
