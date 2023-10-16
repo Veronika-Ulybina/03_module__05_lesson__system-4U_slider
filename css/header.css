@@ -22,7 +22,7 @@
 	border-radius: 50%;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	padding: 17px 0;
 }
 
 .header__contact-phone {
@@ -42,7 +42,7 @@
 .contacts__number {
 	display: block;
 	font-size: 24px;
-	margin-bottom: 3px;
+	margin-bottom: 1px;
 }
 
 .contacts__text {
@@ -72,11 +72,12 @@
 		flex: 0 0 60px;
 		height: 60px;
 		font-size: 22px;
+		padding: 16px 0;
 	}
 
 	.contacts__number {
 		font-size: 21px;
-		margin-bottom: 4px;
+		margin-bottom: 0;
 	}
 
 	.contacts__text {
@@ -98,13 +99,14 @@
 @media (max-width: 480px) {
 
 	.header {
-		padding: 15px 0;
+		padding: 14px 0;
 	}
 
 	.logo {
 		flex: 0 0 30px;
 		height: 30px;
 		font-size: 11px;
+		padding: 8px 0;
 	}
 
 	.header__contact-phone {

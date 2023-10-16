@@ -27,6 +27,7 @@
 	font-weight: 500;
 	font-size: 12px;
 	line-height: 140%;
+	transform: translateX(-32%);
 }
 
 @media (max-width: 1024px) {
@@ -35,12 +36,9 @@
 		padding: 37px 0 49px;
 	}
 
-	.footer__block {
-		column-gap: 21px;
-	}
-
 	.footer__author {
 		opacity: .5;
+		transform: translateX(-41%);
 	}
 
 	.excerpt {
@@ -73,6 +71,7 @@
 		background-color: #2a2c3f;
 		box-shadow: 0 0 0 100vmax #2a2c3f;
 		clip-path: inset(0 -100vmax);
+		transform: unset;
 	}
 }
 

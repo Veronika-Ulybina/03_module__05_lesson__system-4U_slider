@@ -1,24 +1,24 @@
 .benefits {
 	text-align: center;
 	color: #383a4c;
-	padding: 70px 0;
+	padding: 69px 0 72px;
 }
 
 .benefits__title {
 	font-weight: 700;
 	font-size: 35px;
-	margin-bottom: 25px;
+	margin-bottom: 28px;
 }
 
 .benefits__about-block {
-	margin-bottom: 50px;
+	margin-bottom: 59px;
 }
 
 .about-block__title {
 	position: relative;
 	display: inline-block;
 	font-weight: 500;
-	margin-bottom: 35px;
+	margin-bottom: 34px;
 }
 
 .about-block__title:before, 
@@ -64,7 +64,6 @@
 .benefits-list__number {
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	width: 122px;
 	height: 122px;
 	font-weight: 500;
@@ -73,7 +72,8 @@
 	background-color: #23c7ec;
 	color: var(--main-color, #fff);
 	border-radius: 50%;
-	margin: 0 auto 16px;
+	padding: 37px 0;
+	margin: 0 auto 15px;
 }
 
 .benefits-list__text {
@@ -84,14 +84,22 @@
 
 @media (max-width: 1024px) {
 
+	.benefits {
+		padding: 70px 0 73px;
+	}
+
 	.benefits__title {
 		font-size: 32px;
 		margin-bottom: 23px;
 	}
 
+	.benefits__about-block {
+		margin-bottom: 61px;
+	}
+
 	.about-block__title {
 		font-size: 20px;
-		margin-bottom: 33px;
+		margin-bottom: 31px;
 	}
 	
 	.about-block__title:before, 
@@ -120,8 +128,8 @@
 		width: 104px;
 		height: 104px;
 		font-size: 52px;
-		line-height: 140%;
-		margin: 0 auto 26px;
+		padding: 26px 0;
+		margin: 0 auto 24px;
 	}
 	
 	.benefits-list__text {
@@ -150,21 +158,21 @@
 @media (max-width: 480px) {
 
 	.benefits {
-		padding: 30px 0 60px;
+		padding: 31px 0 63px;
 	}
 
 	.benefits__title {
 		font-size: 20px;
-		margin-bottom: 15px;
+		margin-bottom: 13px;
 	}
 
 	.benefits__about-block {
-		margin-bottom: 40px;
+		margin-bottom: 42px;
 	}
 
 	.about-block__title {
 		font-size: 16px;
-		margin-bottom: 26px;
+		margin-bottom: 29px;
 	}
 	
 	.about-block__title:before, 
@@ -174,11 +182,11 @@
 	}
 	
 	.about-block__title:before {
-		transform: translate(-42px, -50%);
+		transform: translate(-45px, -50%);
 	}
 	
 	.about-block__title:after {
-		transform: translate(42px, -50%);
+		transform: translate(45px, -50%);
 	}
 
 	.about-block__text {
